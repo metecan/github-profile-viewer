@@ -14,8 +14,7 @@ function allEvent() {
 }
 
 function getData(e) {
-
-    let username = nameInput.value.trim();
+    const username = nameInput.value.trim();
 
     if (username === "") {
         alert("Geçerli kullanıcı adı gir!")
@@ -45,7 +44,7 @@ function clearAllSearched() {
 }
 
 function getAllSearched() {
-    let users = strg.getSearchedUsers();
+    const users = strg.getSearchedUsers();
     let result = "";
     users.forEach(user => {
         result += `
